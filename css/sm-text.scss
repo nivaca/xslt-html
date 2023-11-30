@@ -1,0 +1,166 @@
+@import "variables";
+
+* {
+    // font-family: $text-font-stack;
+    font-size: 100%;
+    font-weight: normal;
+	text-indent: 0em;
+}
+
+// body {
+// 	margin-left: 2cm;
+// }
+
+// Span styles -----------------------------------------------
+
+.sm-small-caps {font-variant: small-caps;}
+
+.sm-bold {font-weight: bold;}
+
+.sm-superscript {
+    vertical-align: super; font-size: smaller;
+}
+
+.sm-upshape {
+    font-weight: normal; font-style: normal;
+}
+
+.sm-italic {font-style: italic;}
+
+.sm-name {font-variant: small-caps}
+
+.sm-caesura{font-style: normal;}
+
+.sm-elipsis{font-style: normal;}
+
+.sm-notesep{font-style: normal;} // when two notes go one after the other
+
+.sm-title, sm-ms-title, sm-ed-title {font-style: italic;}
+
+.sm-upshape-title {
+    font-weight: normal; font-style: normal;
+}
+
+
+// span.milestone {
+// 	padding: 0; 
+// 	margin: 0; 
+// 	size: 0; 
+// 	font-size: 0;
+// }
+
+.sm-parnum {
+	margin-left: -1cm;
+	font-weight: bold;
+	// position: absolute;
+	// left: -30px;
+	text-align: right;
+	cursor: pointer;
+	color: firebrick;
+	// &::after { 
+	// 	content: " ";
+	// }
+	&:hover{
+		color: $dark;
+	}
+}
+
+
+.sm-linum{
+	// padding-right: 3pt;
+	margin-left: 0px;
+	font-weight: normal;
+	// position: absolute;
+	text-align: right;
+	cursor: pointer;
+	color: firebrick;
+	vertical-align: super;
+	 font-size: smaller;
+	// &::after { 
+	// 	content: "_";
+	//   }
+	&:hover{
+		color: $dark;
+	}
+}
+
+
+.sm-folionum {
+	border-left: 2px solid gray;
+	border-right: 2px solid gray;
+	padding-right: 3px; padding-left: 3px; color: gray; 
+}
+
+.sm-note-anchor {
+	color: darkred;
+	vertical-align: super;
+	&::before{content: "*";}
+}
+
+
+// Header styles -----------------------------------------------
+
+h1, h2, h3, h4, h5, h6 {
+	// font-weight: bold; 
+	// text-align: center;
+	&:hover{
+		.sm-div-info{display: inline}
+	}
+}
+
+// h1 {font-size: 28px;}
+// h2 {font-size: 24px;}
+// h3 {font-size: 20px;}
+// h4 {font-size: 18px;}
+// h5 {font-size: 16px;}
+// h6 {font-size: 12px;}
+
+
+
+// paragraphs --------------------------------
+
+p {
+	font-family: $text-font-stack;
+    margin-top: 0pt;
+	width: 60%;
+	max-width: 800px;
+	text-align: justify;
+	
+	&.sm-indented {
+		text-indent: 2em;
+	}
+
+	&.sm-note-hidden {
+		display: none;
+	}
+	&.sm-note-unhidden {
+		font-size: 80%;
+		width: 60%;
+		background-color: thistle;
+		display: inline;
+	}
+
+}
+
+
+q {
+	&.sm-foreign {
+		font-style: italic;
+	}
+	&.sm-lexeme {
+		font-variant: small-caps;
+	}
+}
+
+
+blockquote {
+	margin-top: 2em;
+	margin-bottom: 2em;
+	margin-left: 2em;
+}
+
+// tables ------------------------------------
+table {}
+tr {}
+th {}
+td {}

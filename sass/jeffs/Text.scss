@@ -1,0 +1,199 @@
+// Place all the styles related to the text controller here.
+// They will automatically be included in application.css.
+// You can use Sass (SCSS) here: http://sass-lang.com/
+@import "variables";
+
+.sm-text
+{
+	margin-top: 100px;
+	width: 60%;
+	max-width: 800px;
+	text-align: justify;
+}
+
+@media (max-width: 800px){
+	.sm-text {
+  	width: 90%;
+  }
+}
+
+#sm-pub-info{
+	font-size: 12px;
+	margin-bottom: 20px;
+	p {
+		margin: 0
+	}
+}
+
+#sm-text-tool-bar {background-color: $light;}
+
+h1, h2, h3, h4, h5, h6 {font-weight: bold; text-align: center;
+	&:hover{
+		.sm-div-info{display: inline}
+	}
+}
+
+h1 {font-size: 24px;}
+h2 {font-size: 20px;}
+h3 {font-size: 18px;}
+h4 {font-size: 16px;}
+h5 {font-size: 12px;}
+h6 {font-size: 12px;}
+
+
+.sm-div-info {padding-left: 5px; display: none}
+
+///test index page styles
+
+#sm-question-container {text-align: left; h2 {text-align: left;}}
+
+
+//span styles
+.sm-folionumber {border-left: 2px solid gray;
+	border-right: 2px solid gray;
+	padding-right: 3px; padding-left: 3px; color: gray; }
+
+.sm-title {font-style: italic}
+
+.sm-name {font-variant: small-caps}
+
+.sm-unclear {font-color: gray;}
+
+.sm-add {color: blue;}
+
+.sm-del {color: red; text-decoration: line-through}
+
+.plaoulparagraph {position: relative;}
+
+.sm-paragraphmenu {cursor: pointer; padding-left: 10px;  color: gray;}
+
+.sm-paragraphmenu:hover {}
+
+#sm-collation-selector-form {text-align: center; select {height: 30px; background-color: white;} input {height: 30px;}}
+
+#sm-collation-selector {border-bottom: 1px dashed black; margin-bottom: 7px; padding-bottom: 7px;}
+
+//toggle class required for javascript question filter
+.sm-hidden {display: none}
+
+//marginal note style for diplomatic transcriptions
+.sm-marginal-note {
+	position: absolute;
+	left: -150px;
+	width: 100px;
+	height: 20px;
+	overflow: hidden;
+	border-top: 1px solid $dark;
+	//background-color: $light-color;
+  background-color: white;
+	padding: 5px;
+	text-align:right;
+	line-height: 125%;
+	font-size: 10px;
+}
+
+.sm-marginal-note:hover{
+	z-index: 1;
+	background-color: $light;
+	height: auto;
+	overflow: visible;
+}
+
+.skinnyText{
+	margin-left:45%;
+	width: 50%;
+}
+
+.longText{
+	margin-bottom: 70vh;
+}
+
+.highlight2 {
+    color: $dark !important;
+    transition: all 1s ease-in;
+}
+
+.highlight {
+    background-color: yellow;
+    transition: all 1s ease-in;
+}
+
+.highlightNone {
+    background-color: white;
+    transition: all 1s ease-in;
+}
+
+.note-display {
+	position: absolute;
+	border-radius: 5px;
+	box-shadow: 2px 2px 2px $dark;
+	padding: 5px;
+	background-color: $light;
+	color: black;
+	width: 200px;
+	overflow: inherit;
+	z-index: 1;
+	font-size: 16px;
+	box-sizing: content-box;
+	left: 20px
+}
+
+sub, sup{
+	line-height: inherit;
+}
+
+.paragraphnumber{
+	padding-right: 15px;
+	margin-left: 0px;
+	//font-weight: bold;
+	position: absolute;
+	left: -30px;
+	text-align: right;
+	cursor: pointer;
+	color: $link-color
+}
+
+.paragraphnumber:hover{
+	color: $dark
+}
+
+.sm-line-number{
+	font-size: 10px;
+	padding-right: 15px;
+	margin-left: 0px;
+	margin-top: 5px;
+	//font-weight: bold;
+	position: absolute;
+	left: -20px;
+	text-align: right;
+	cursor: pointer;
+	color: $link-color;
+}
+
+.show-line-witness{
+  cursor: pointer;
+	color: $link-color;
+}
+
+.sm-unclear{
+	color: #6f7ab3;
+}
+
+.sm-add{
+	color: blue;
+}
+
+.sm-del{
+	color: red;
+	text-decoration: line-through;
+}
+
+.sm-quote-clickable, .sm-ref-clickable{
+	cursor: pointer;
+	border-bottom: 2px solid $light;
+}
+
+.sm-quote-clickable:hover, .sm-ref-clickable:hover{
+	cursor: pointer;
+	border-bottom: 3px solid $dark;
+}
